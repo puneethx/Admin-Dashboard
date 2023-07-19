@@ -1,10 +1,11 @@
 .topbar{
     background-color: #252c48;
     width: 100%;
-    height: 50px;
+    height: 70px;
     position: sticky;
     top: 0;
     z-index: 999;
+    border-radius: 10px;
 }
 .topbarWrapper{
     height: 100%;
