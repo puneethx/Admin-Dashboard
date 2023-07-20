@@ -2,7 +2,7 @@
     flex:1;
     height: 100%;
     /* height : calc(100vh - 50px);  */
-    background-color: #2b3660;
+    background-color: #29314d;
     position: sticky;
     top:50px;
     border-radius: 10px;
@@ -19,7 +19,7 @@
 
 .sidebarTitle{
     font-size: 13px;
-    color: rgb(112, 113, 142);
+    color: rgb(159, 160, 192);
 }
 
 .sidebarList{
