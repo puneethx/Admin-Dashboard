@@ -3,6 +3,7 @@ import Sidebar from "./components/sidebar/sidebar";
 import Home from "./pages/home/home";
 import "./app.css";
 import UserList from "./pages/userList/userList";
+import User from "./pages/user/user"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
           /> 
           <Route exact path="/users"
             element = {<UserList/>}
+          />
+          <Route exact path="/user/:userId"
+            element = {<User/>}
           /> 
         </Routes>
       </div>

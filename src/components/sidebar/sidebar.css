@@ -5,12 +5,14 @@
     background-color: #29314d;
     position: sticky;
     top:50px;
+    margin-top: -16px;
     border-radius: 10px;
 }
 
 .sidebarWrapper{
     padding: 20px;
     color: white;
+    margin-top: 24px;;
 }
 
 .sidebarMenu{

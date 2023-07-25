@@ -1,41 +1,98 @@
 export const userData = [
-    {
-      name: 'Jan',
-      "Active User": 4000,
-    },
-    {
-      name: 'Feb',
-      "Active User": 3000,
-    },{
-      name: 'Mar',
-      "Active User": 5000,
-    },{
-      name: 'Apr',
-      "Active User": 4000,
-    },{
-      name: 'May',
-      "Active User": 3000,
-    },{
-      name: 'Jun',
-      "Active User": 4000,
-    },{
-      name: 'Jul',
-      "Active User": 2000,
-    },{
-      name: 'Aug',
-      "Active User": 4000,
-    },{
-      name: 'Sep',
-      "Active User": 3000,
-    },{
-      name: 'Oct',
-      "Active User": 4000,
-    },{
-      name: 'Nov',
-      "Active User": 1000,
-    },{
-      name: 'Dec',
-      "Active User": 3000,
-    },
-  
-    ];
+  {
+    name: 'Jan',
+    "Active User": 4000,
+  },
+  {
+    name: 'Feb',
+    "Active User": 3000,
+  },{
+    name: 'Mar',
+    "Active User": 5000,
+  },{
+    name: 'Apr',
+    "Active User": 4000,
+  },{
+    name: 'May',
+    "Active User": 3000,
+  },{
+    name: 'Jun',
+    "Active User": 4000,
+  },{
+    name: 'Jul',
+    "Active User": 2000,
+  },{
+    name: 'Aug',
+    "Active User": 4000,
+  },{
+    name: 'Sep',
+    "Active User": 3000,
+  },{
+    name: 'Oct',
+    "Active User": 4000,
+  },{
+    name: 'Nov',
+    "Active User": 1000,
+  },{
+    name: 'Dec',
+    "Active User": 3000,
+  },
+];
+
+export const userRows = [
+  { id: 1, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 2, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 3, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 4, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 5, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 6, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 7, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 8, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 9, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+  { id: 10, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
+  email: 'puneeth.21bce7948@vitapstudent.ac.in',
+  status: "active",
+  transaction: '₹1,40,000',
+  },
+
+];
+
+
+
+        

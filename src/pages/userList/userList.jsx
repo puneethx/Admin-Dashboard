@@ -4,7 +4,20 @@ import { DataGrid } from '@mui/x-data-grid';
 import Box from '@mui/material/Box';
 import { DeleteOutline } from "@mui/icons-material";
 import { styled } from '@mui/material/styles';
+import { userRows } from "../../dummydata";
+import { Link } from "react-router-dom"
+import { useState } from "react";
 
+
+
+export default function UserList() {
+
+
+const [data,setData] = useState(userRows);
+
+const handleDelete = (id)=>{
+  setData(data.filter((item)=>item.id !== id))
+}
 
 function customCheckbox(theme) {
   return{
@@ -118,8 +131,10 @@ const columns = [
     renderCell: (params)=>{
       return(
         <>
+        <Link to={"/user/"+params.row.id}>
           <button className="userListEdit">Edit</button>
-          <DeleteOutline className="userListDelete"/>
+        </Link>
+          <DeleteOutline className="userListDelete" onClick={()=>handleDelete(params.row.id)}/>
         </>
       )
     }
@@ -127,65 +142,9 @@ const columns = [
 
 ];
 
-const rows = [
-  { id: 1, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 2, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 3, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 4, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 5, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 6, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 7, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 8, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 9, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-  { id: 10, userName: 'T Puneeth Reddy', avatar: 'https://media.licdn.com/dms/image/D5603AQHVdswp3GN-DQ/profile-displayphoto-shrink_800_800/0/1666363601384?e=2147483647&v=beta&t=PY52LedOd_e85UZIbU4cN5qwO5-0PhLEsBjwa6aecic', 
-  email: 'puneeth.21bce7948@vitapstudent.ac.in',
-  status: "active",
-  transaction: '₹1,40,000',
-  },
-
-];
-
-
-export default function userList() {
   return (
     <div className="userList">
-    <Box sx={{ height: 400, width: '100%', }}>
+    <Box sx={{ height: 530, width: '100%', }}>
       <SDataGrid
         checkboxSelection
         sx={{
@@ -196,16 +155,16 @@ export default function userList() {
           color: '#b5c5ff',
         },
       }}S
-        rows={rows}
+        rows={data}
         columns={columns}
         initialState={{
           pagination: {
             paginationModel: {
-              pageSize: 5,
+              pageSize: 8,
             },
           },
         }}
-        pageSizeOptions={[5]}
+        pageSizeOptions={[8]}
         disableRowSelectionOnClick
       />
     </Box>
