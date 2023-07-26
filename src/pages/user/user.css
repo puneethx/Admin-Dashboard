@@ -93,3 +93,78 @@
     font-size: 16px !important;
     margin-right: 5px;
 }
+
+.userUpdateImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.userUpdateForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.userUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.userUpdateItem>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.userUpdateInput{
+    border: none;
+    border-radius: 6px;
+    width: 300px;
+    height: 30px;
+    padding-left: 14px;
+    color: white;
+    border-bottom: 2px solid rgb(98, 127, 194);
+    background-color: #3c445f;
+}
+
+.userUpdateInput::placeholder{
+    color: rgb(105, 120, 155);
+}
+
+.userUpdateTitle{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(250,250,255);
+}
+
+.userUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}   
+
+.userUpdateUpload{
+    display: flex;
+    align-items: center;
+}
+
+.userUpdateIcon{
+    cursor: pointer;
+
+}
+
+.userUpdateButton{
+    border:none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(64, 73, 111);
+    font-weight: 600;
+    color: rgb(240,240,255);
+}
+
+.userUpdateButton:hover{
+    background-color:rgb(84, 103, 150) ;
+}
