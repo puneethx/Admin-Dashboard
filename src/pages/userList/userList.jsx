@@ -11,11 +11,9 @@ import { useState } from "react";
 
 
 export default function UserList() {
+  const [data,setData] = useState(userRows);
 
-
-const [data,setData] = useState(userRows);
-
-const handleDelete = (id)=>{
+  const handleDelete = (id)=>{
   setData(data.filter((item)=>item.id !== id))
 }
 
