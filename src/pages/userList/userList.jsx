@@ -142,6 +142,7 @@ const columns = [
 
   return (
     <div className="userList">
+      <h1 className="userTitle">Existing Users</h1>
     <Box sx={{ height: 530, width: '100%', }}>
       <SDataGrid
         checkboxSelection

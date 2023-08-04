@@ -1,41 +1,41 @@
 export const userData = [
   {
-    name: 'Jan',
-    "Active User": 4000,
+    name: "Jan",
+    "Active Users": 4000,
   },
   {
     name: 'Feb',
-    "Active User": 3000,
+    "Active Users": 3000,
   },{
     name: 'Mar',
-    "Active User": 5000,
+    "Active Users": 5000,
   },{
     name: 'Apr',
-    "Active User": 4000,
+    "Active Users": 4000,
   },{
     name: 'May',
-    "Active User": 3000,
+    "Active Users": 3000,
   },{
     name: 'Jun',
-    "Active User": 4000,
+    "Active Users": 4000,
   },{
     name: 'Jul',
-    "Active User": 2000,
+    "Active Users": 2000,
   },{
     name: 'Aug',
-    "Active User": 4000,
+    "Active Users": 4000,
   },{
     name: 'Sep',
-    "Active User": 3000,
+    "Active Users": 3000,
   },{
     name: 'Oct',
-    "Active User": 4000,
+    "Active Users": 4000,
   },{
     name: 'Nov',
-    "Active User": 1000,
+    "Active Users": 1000,
   },{
     name: 'Dec',
-    "Active User": 3000,
+    "Active Users": 3000,
   },
 ];
 
@@ -168,6 +168,13 @@ export const productRows = [
   status: "active",
   price: '₹1,40,000',
   },
+
 ]
 
+export const pieData = [
+  { name: 'Admin Dept', value: 400 },
+  { name: 'Fire', value: 300 },
+  { name: 'Active Users', value: 278 },
+  { name: 'Inactive Users', value: 189 },
+];
         

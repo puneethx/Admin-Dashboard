@@ -7,7 +7,11 @@ import User from "./pages/user/user";
 import ProductList from "./pages/productList/productList";
 import Product from "./pages/product/product";
 import NewUser from "./pages/newUser/newUser";
+import Settings from "./pages/settings/settings";
 import NewProduct from "./pages/newProduct/newProduct";
+import Notifications from "./pages/notifications/notifications";
+import Analytics from "./pages/analytics/analytics";
+import Sales from "./pages/sales/sales";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -37,6 +41,21 @@ function App() {
           />
           <Route exact path="/newproduct" 
             element = {<NewProduct/>}
+          />
+          <Route exact path="/settings" 
+            element = {<Settings/>}
+          />
+          <Route exact path="/notifications" 
+            element = {<Notifications/>}
+          />
+          <Route exact path="/analytics" 
+            element = {<Analytics/>}
+          />
+          <Route exact path="/notifications" 
+            element = {<Notifications/>}
+          />
+          <Route exact path="/sales" 
+            element = {<Sales/>}
           />
         </Routes>
       </div>

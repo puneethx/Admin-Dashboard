@@ -1,0 +1,22 @@
+.notifications{
+    color: rgb(240,240,255);
+}
+
+.notify-main{
+    flex:4;
+    margin-left: 20px;
+    margin-top: 20px;
+    color:rgb(106, 108, 157);
+}
+
+.notify-child{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vw;
+    font-size:x-large;
+    font-weight: 400;
+
+}
+
+
+

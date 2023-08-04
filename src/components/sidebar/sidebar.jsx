@@ -14,13 +14,17 @@ const sidebar = () => {
                     <li className="sidebarListItem active">
                         <LineStyle className='sidebarIcon'/>Home
                     </li>
-                </Link>    
+                </Link>
+                <Link to="/analytics" className='link'>    
                     <li className="sidebarListItem">
                         <Timeline className='sidebarIcon'/>Analytics
                     </li>
+                </Link>
+                <Link to="/sales" className='link'>
                     <li className="sidebarListItem">
                         <TrendingUp className='sidebarIcon'/> Sales
                     </li>
+                </Link>
                 </ul>
             </div>
             <div className="sidebarMenu">
